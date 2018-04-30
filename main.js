@@ -1,6 +1,8 @@
-let valueStore = []
+let valueStore = [];
+let displayStore; 
+let screenDisplay = document.getElementById("display");
 
-function clear(displayStore, valueStore, screenDisplay){
+function clearDisplay(){
 	valueStore =[]
 	displayStore =[]
 	screenDisplay.textContent = ''
@@ -9,8 +11,7 @@ function clear(displayStore, valueStore, screenDisplay){
 
 function populateDisplay(val){
 	valueStore.push(val)
-	let displayStore = valueStore.toString().replace(/,/g,'')
-	let screenDisplay = document.getElementById("display")
+	displayStore = valueStore.toString().replace(/,/g,'')
 	screenDisplay.textContent = displayStore
 
 }
