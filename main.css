@@ -5,16 +5,17 @@ html {
 }
 
 #calculator {
-	width: 500px;
-	height: 500px;
+	width: 400px;
+	height: 525px;
 	background: #c0c1c4;
 	border-radius: 10px;
+	margin: auto;
 }
 
 #screen {
 	position: relative;
 	height: 70px;
-	width: 450px;
+	width: 350px;
 	background: #232323;
 	border-radius: 10px;
 	margin: auto;
@@ -31,6 +32,7 @@ html {
 	top: 15px;
 	padding-right: 10px;
 	letter-spacing: 3px;
+	overflow-x: hidden;
 }
 
 button {
@@ -45,24 +47,25 @@ button:hover {
 }
 
 #equals {
-	position: relative;
+	/*position: relative;
 	top: 7px;
 	left: 10px;
 	height: 70px;
-	width: 150px;
+	width: 150px;*/
 }
 
 #operations{
-	width: 200px;
+	width: 100px;
 	float: right;
 	position: relative;
 	top: 50px;
 }
 
 .op {
-	height: 112px;
+	height: 50px;
 	width: 70px;
 	margin: 7px;
+	color: red;
 }
 
 #numbers {
@@ -73,7 +76,7 @@ button:hover {
 }
 
 .number {
-	height: 70px;
+	height: 82px;
 	width: 70px;
 	margin: auto;
 	margin: 7px;
